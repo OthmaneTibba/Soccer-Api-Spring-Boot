@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class FixtureController {
 
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     String test(){
-        return "Hello";
+        return "Test";
+    }
+
+    @GetMapping("/hello")
+    String hello(){
+        return "Hello World";
     }
 }
