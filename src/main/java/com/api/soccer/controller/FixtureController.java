@@ -18,4 +18,9 @@ public class FixtureController {
     String hello(){
         return "Hello From  .";
     }
+
+    @GetMapping("/welcome")
+    String Welcome(){
+        return "Welcome  .";
+    }
 }
