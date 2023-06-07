@@ -16,11 +16,13 @@ public class FixtureController {
 
     @GetMapping("/hello")
     String hello(){
-        return "Hello From  .";
+        return "Hello World.";
     }
 
     @GetMapping("/welcome")
     String Welcome(){
         return "Welcome  .";
     }
+
+
 }
