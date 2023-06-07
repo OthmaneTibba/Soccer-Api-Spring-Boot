@@ -1,6 +1,7 @@
 package com.api.soccer.controller;
 
 
+import com.api.soccer.model.Fixture;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,23 +10,10 @@ public class FixtureController {
 
 
     @GetMapping("/")
-    String test(){
-        return "Test";
-    }
-
-    @GetMapping("/hello")
-    String hello(){
-        return "Hello.";
-    }
-
-    @GetMapping("/welcome")
-    String Welcome(){
-        return "Welcome  .";
-    }
-
-    @GetMapping("/imanox")
-    String imanox(){
-        return "imanox is hete <3";
+    Fixture getAllFixtures(){
+        return new Fixture(
+                "Welcome to Soccer Api"
+        );
     }
 
 
