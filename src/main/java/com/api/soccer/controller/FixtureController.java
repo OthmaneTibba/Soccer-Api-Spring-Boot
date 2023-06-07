@@ -16,6 +16,6 @@ public class FixtureController {
 
     @GetMapping("/hello")
     String hello(){
-        return "Hello From Test";
+        return "Hello From Test .";
     }
 }
