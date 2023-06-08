@@ -17,4 +17,12 @@ public class FixtureController {
     }
 
 
+    @GetMapping("/snof")
+    Fixture getSnof(){
+        return new Fixture(
+                "Welcome snof"
+        );
+    }
+
+
 }
